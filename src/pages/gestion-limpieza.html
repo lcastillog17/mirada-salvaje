@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de Limpieza - Zoológico Mirada Salvaje</title>
+    <link rel="stylesheet" href="../styles/common.css">
+  </head>
+  <body>
+    <header>
+      <h1>Gestión de Limpieza</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../pages/gestion-limpieza.html">Gestión de Limpieza</a></li>
+          <li><a href="../pages/gestion-alimentacion.html">Gestión de Alimentación</a></li>
+          <li><a href="../pages/control-clinico.html">Control Clínico</a></li>
+          <li><a href="../pages/gestion-entradas-promociones.html">Gestión de Entradas y Promociones</a></li>
+          <li><a href="../pages/gestion-recursos-humanos.html">Gestión de Recursos Humanos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <fieldset id="seleccion-seccion">
+        <label>
+          <input type="radio" name="seccion" value="limpiezas" checked />
+          Gestión de Limpieza
+        </label>
+      </fieldset>
+
+      <section id="seccion-limpiezas">
+
+        <h2>Gestión de Limpieza</h2>
+
+        <form id="registroLimpiezaForm">
+          <label for="areaLimpieza">Área de Limpieza:</label>
+          <select id="areaLimpieza" name="areaLimpieza">
+            <option value="jaulas">Jaulas</option>
+            <option value="sanitarios">Sanitarios</option>
+            <option value="jardines">Jardines</option>
+            <option value="juegos">Área de Juegos</option>
+            <option value="oficinas">Oficinas</option>
+          </select>
+          <label for="tarea">Tarea de Limpieza:</label>
+          <input type="text" id="tarea" name="tarea" required />
+          <button id="guardarLimpiezaBtn">Guardar</button>
+        </form>
+
+        <table id="tabla-limpiezas">
+          <thead>
+            <tr>
+              <th id="area">Área de Limpieza</th>
+              <th id="tarea">Tarea de Limpieza</th>
+              <th id="acciones">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Las tareas de limpieza se cargarán aquí dinámicamente -->
+          </tbody>
+        </table>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Zoológico Mirada Salvaje</p>
+    </footer>
+
+    <!-- JavaScript puede ser enlazado aquí para implementar la funcionalidad completa (CRUD) -->
+    <script type="module" src="../scripts/gestionLimpieza.js"></script>
+  </body>
+</html>

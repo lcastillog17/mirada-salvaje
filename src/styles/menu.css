@@ -1,0 +1,61 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Estilos para el header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para el menu */
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Estilos para el menú vertical con apariencia de botones */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  margin-bottom: 10px; /* Espaciado entre las opciones */
+}
+
+nav a {
+  display: block; /* Hace que los enlaces ocupen todo el ancho */
+  text-decoration: none;
+  color: #fff; /* Color del texto */
+  background-color: #333; /* Color de fondo */
+  padding: 10px 20px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s; /* Transición de color */
+}
+
+nav a:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+/* Estilos para el footer fijo */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
